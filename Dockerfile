@@ -2,7 +2,7 @@
 FROM ruby:3.1.2
 RUN apt-get update -qq && apt-get install -y postgresql-client && mkdir /app
 
-RUN gem update --system && gem install bundler -v 2.3.11
+RUN gem update --system && gem install bundler -v 2.3.16
 
 COPY Gemfile Gemfile.lock /app/
 WORKDIR /app

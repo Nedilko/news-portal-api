@@ -2,12 +2,17 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Listen for rdebug-ide",
-      "type": "Ruby",
-      "request": "attach",
-      "remoteHost": "127.0.0.1",
-      "remotePort": "9000",
-      "remoteWorkspaceRoot": "/app"
-    }
+      "type": "rdbg",
+      "name": "Debug current file with rdbg",
+      "request": "launch",
+      "script": "${file}",
+      "args": [],
+      "askParameters": true
+    },
+    {
+      "type": "rdbg",
+      "name": "Attach with rdbg",
+      "request": "attach"
+    },
   ]
 }

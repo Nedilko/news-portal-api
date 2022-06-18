@@ -48,16 +48,20 @@
       "editor.insertSpaces": true,
       "editor.tabSize": 2
     },
-		// "solargraph.commandPath": "/usr/local/bundle/bin/solargraph",
-    // "solargraph.bundlerPath": "/usr/local/bin/bundle",
+		"solargraph.commandPath": "/usr/local/bundle/bin/solargraph",
+		"solargraph.diagnostics": true,
+		"ruby.useBundler": true,
+		"ruby.pathToBundler": "/usr/local/bin/bundle",
 		"ruby.rubocop.executePath": "/usr/local/bundle/bin/"
 	},
 	"extensions": [
     "rebornix.Ruby",
-		// "castwide.solargraph",
+		"aki77.rails-db-schema",
+		"castwide.solargraph",
     "misogi.ruby-rubocop",
     "miguel-savignano.ruby-symbols",
     "wingrunr21.vscode-ruby",
-    "kaiwood.endwise"
+    "kaiwood.endwise",
+		"KoichiSasada.vscode-rdbg"
   ]
 }
