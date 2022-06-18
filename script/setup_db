@@ -1,0 +1,6 @@
+#!/bin/bash
+set -e
+cd "$(dirname "$0")/.."
+
+echo '== DB reset =='
+docker-compose run --rm app bundle exec rails db:migrate:reset
