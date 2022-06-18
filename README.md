@@ -1,7 +1,11 @@
 # README
 
-bin/setup - for very first app start
-bin/start - to start puma server
+## Commands
+
+`script/run_app` start application \
+`script/setup_db` create database \
+`script/exec` run any commands in container \
+`script/bootstrap` install dependencies
 
 ---
 
