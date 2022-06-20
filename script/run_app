@@ -1,0 +1,8 @@
+#!/bin/bash
+set -e
+cd "$(dirname "$0")/.."
+
+docker-compose up -d app
+docker attach $(docker-compose ps -q app)
+# docker-compose stop app
+docker-compose down

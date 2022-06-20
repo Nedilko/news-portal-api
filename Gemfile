@@ -44,6 +44,8 @@ group :development, :test do
   gem 'rubocop', '~> 1.30', require: false
   gem 'rubocop-performance'
   gem 'rubocop-rails'
+  gem 'rubocop-rspec', '~> 2.11'
+  gem 'solargraph', '~> 0.45.0'
 end
 
 group :development do

@@ -1,5 +1,14 @@
 # README
 
+## Commands
+
+`script/run_app` start application \
+`script/setup_db` create database \
+`script/exec` run any commands in container \
+`script/bootstrap` install dependencies
+
+---
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
