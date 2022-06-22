@@ -4,6 +4,7 @@
 
 `script/run_app` start application \
 `script/setup_db` create database \
+`script/migrate_db` run database migrations \
 `script/exec` run any commands in container \
 `script/bootstrap` install dependencies
 
