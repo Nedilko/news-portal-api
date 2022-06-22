@@ -4,7 +4,7 @@ default: &default
   host: db
   username: postgres
   password: password
-  pool: 5
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
 development:
   <<: *default
@@ -12,4 +12,10 @@ development:
 
 test:
   <<: *default
-  database: news_test 
+  database: news_test
+
+production:
+  <<: *default
+  database: <%= ENV["NEWS_PORTAL_API_DATABASE_NAME"] %>
+  username: <%= ENV["NEWS_PORTAL_API_DATABASE_USERNAME"] %>
+  password: <%= ENV["NEWS_PORTAL_API_DATABASE_PASSWORD"] %>
