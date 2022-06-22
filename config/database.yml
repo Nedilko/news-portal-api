@@ -16,6 +16,4 @@ test:
 
 production:
   <<: *default
-  database: <%= ENV["NEWS_PORTAL_API_DATABASE_NAME"] %>
-  username: <%= ENV["NEWS_PORTAL_API_DATABASE_USERNAME"] %>
-  password: <%= ENV["NEWS_PORTAL_API_DATABASE_PASSWORD"] %>
+  url: <%= ENV["DATABASE_URL"] %>
