@@ -16,4 +16,6 @@ test:
 
 production:
   <<: *default
-  url: <%= ENV.fetch("MY_APP_DATABASE_URL") { 5 } %>
+  database: news_production
+  username: news_portal_api
+  password: <%= ENV["NEWS_PORTAL_API_DATABASE_PASSWORD"] %>
